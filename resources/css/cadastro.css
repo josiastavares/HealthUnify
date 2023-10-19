@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --color-primary: #4008E2;
+    --color-secundary: #60C4F0;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 77vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 8vh;
+}
+
+header,
+footer {
+    background-image: linear-gradient(10deg, #60C4F0, #4008E2);
+}
+
+.caixa-geral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    height: 450px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 12px 16px 21px 0px rgba(0, 0, 0, 0.10);
+}
+
+.divisao-caixa-geral {
+    text-align: center;
+    margin: auto;
+}
+
+.imagem-cadastro {
+    width: 80%;
+    transform: scaleX(-1);
+}
+
+.txt-negrito {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.caixa-form {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.titulos {
+    display: block;
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 3px;
+}
+
+
+.campo-form {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid var(--color-primary);
+    border-radius: 6px;
+    outline: 0;
+}
+
+.cpf::-webkit-input-placeholder,
+.senha::-webkit-input-placeholder {
+    color: #999999;
+    font-size: 12px;
+}
+
+.grupo-input-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.senha {
+    width: 90%;
+    border: none;
+    padding: 1px;
+}
+
+.senha:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.grupo-visualizar-senha {
+    width: 10%;
+}
+
+.visibilidade {
+    width: 25px;
+    color: #999999;
+}
+
+.visibilidade:hover {
+    cursor: pointer;
+}
+
+.nao-visivel {
+    display: none !important;
+}
+
+.caixa-form-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+.txt-normal {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.txt-link {
+    color: var(--color-secundary);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-cadastro {
+    width: 100%;
+    padding: 10px 0;
+    color: #ffffff;
+    background-color: var(--color-primary);
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--color-primary);
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.btn-cadastro:hover{
+    background-color: #ffffff;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+footer {
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divisao-rodape {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icones-sociais{
+    gap: 15px;
+}
+
+.txt-rodape {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.icone-rodape{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
