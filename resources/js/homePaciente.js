@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const userName = localStorage.getItem('userName');
-  const welcomeMessage = document.getElementById('welcomeMessage');
-  if (userName) {
-      welcomeMessage.textContent += userName;
-  }
-});
+const urlParams = new URLSearchParams(window.location.search);
+
+const products = urlParams.get("name")
+
+document.querySelector('#welcomeMessage').innerHTML += `${products}`
